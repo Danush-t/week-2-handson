@@ -1,9 +1,9 @@
 
-# 🎮 Assignment: Hangman — Word Guessing Game
+# 📘 Assignment: Hangman — Word Guessing Game
 
 ## 🎯 Objective
 
-Build a console-based Hangman game that uses Python strings, loops, conditionals, and basic I/O. The program should let a player guess letters to reveal a hidden word before running out of attempts.
+Build a console-based Hangman game that practices string manipulation, loops, conditionals, and basic I/O. The player will guess letters to reveal a hidden word before running out of attempts.
 
 ## 🧭 Difficulty & Time
 
@@ -17,34 +17,39 @@ Build a console-based Hangman game that uses Python strings, loops, conditionals
 
 ## 📁 Starter files
 
-- `starter-code.py` — a minimal scaffold to start from
+- `starter-code.py` — minimal scaffold to start from
 
 ## 📝 Tasks
 
 ### 🛠️ Task 1 — Core Hangman Game
 
 #### Description
-Implement the main Hangman gameplay loop, selecting a secret word and allowing the player to guess letters until they win or run out of attempts.
+Implement the Hangman gameplay loop: select a secret word, accept guesses, reveal letters, and track remaining attempts.
 
 #### Requirements
-The completed program should:
+Completed program should:
 
-- Randomly select a word from a predefined list.
-- Show the current progress of the word as underscores and revealed letters (e.g. _ a _ g _ a _).
+- Randomly select a secret word from a predefined list.
+- Display progress as underscores and revealed letters (for example: _ a _ g _ a _).
 - Accept single-letter guesses (case-insensitive) and ignore repeated guesses.
-- Track incorrect guesses and limit attempts (e.g. 6 incorrect guesses).
+- Track incorrect guesses and limit attempts (suggested: 6 incorrect guesses).
 - End the game when the word is fully guessed or attempts are exhausted.
-- Display a clear win or lose message and reveal the correct word on loss.
+- Show a clear win or lose message; reveal the correct word on loss.
 
 ### 🛠️ Task 2 — Optional Extensions (extra credit)
 
-- Allow the player to guess the full word.
-- Load words from an external file (e.g. `words.txt`) instead of a hard-coded list.
-- Add a simple ASCII-art hangman that progresses with each incorrect guess.
+#### Description
+Add one or more enhancements for extra credit.
+
+#### Requirements (examples)
+
+- Allow the player to guess the full word in a single attempt.
+- Load words from an external file (e.g. `words.txt`) rather than a hard-coded list.
+- Add ASCII-art that progresses with each incorrect guess.
 
 ## 💡 Hints
 
-- Use a `set` to track guessed letters.
+- Use a `set` to track guessed letters and another `set` for letters in the secret word.
 - Use `random.choice()` from the `random` module to pick a word.
 - Normalize input with `.lower()` and validate it's a single alphabetical character.
 
@@ -58,14 +63,14 @@ python3 starter-code.py
 
 ## ✅ Learning Outcomes
 
-- Practice string manipulation and indexing
-- Implement loops and conditional logic for game state
-- Manage user input and simple validation
+- Practice string manipulation and indexing.
+- Implement loops and conditional logic to manage game state.
+- Handle user input and perform basic validation.
 
 ## 📤 Submission
 
-Follow the course instructions to submit your completed `starter-code.py` (or a new file) with clear comments describing any extensions you implemented.
+Submit your completed `starter-code.py` (or a new file) as directed by the course. Add brief comments describing any extensions you implemented.
 
 ---
 
-Good luck — have fun building Hangman! If you want, I can also implement a reference solution in `starter-code.py` or add test cases.
+If you'd like, I can implement a reference solution in `starter-code.py` or add unit tests — tell me which you'd prefer.
